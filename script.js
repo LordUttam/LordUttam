@@ -7,16 +7,16 @@ function enterSite() {
 	$("#full-site").css("visibility", "visible");
 	$("#full-site").css("overflow", "visible");
 	$("#full-site").css("max-height", "auto");
-	$("#register-side-bar").css("transform", "translate(1376px)");
+	$("#register-side-bar").css("transform", "translate(0)");
 }
 
 $("#visible-section").mouseenter(function() { openForm(); });
-$("#above-fold").mouseenter(function() { closeForm(); });
+$("#empty-section").mouseenter(function() { closeForm(); });
 $("#form-section").mouseleave(function() { closeForm(); });
 
 
 function openForm() {
-	$("#register-side-bar").css("transform", "translate(950px)");
+	$("#register-side-bar").css("transform", "translate(-650px)");
 	$("#register-side-bar").css("transition-delay", "0s");
 	$("#register-side-bar").css("z-index", "100");
 
@@ -26,7 +26,7 @@ function openForm() {
 
 function closeForm() {
 	$("#register-side-bar").css("z-index", "0");
-	$("#register-side-bar").css("transform", "translate(1376px)");
+	$("#register-side-bar").css("transform", "translate(0)");
 	$("#call-num").css("opacity", "1");
 	$("#reg").css("opacity", "1");
 }

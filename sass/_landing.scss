@@ -12,10 +12,10 @@
 	background-image: url(get-image("bg.jpg"));
 	background-size: cover;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-position: center;
 	height: 100vh;
 	width: 100%;
+	margin:0;
 	position: fixed;
 }
 
@@ -27,7 +27,7 @@
 	height: 100vh;
 	color: white;
 	position: relative;
-	z-index: 2;
+	z-index: 10;
 	transition: all 0.4s;
 	animation-name: intro-content;
 	animation-duration: 1.4s;
@@ -43,7 +43,7 @@
 	}
 
 	p {
-		width: 40%;
+		width: 40vw;
 		text-align: center;
 		line-height: 190%;
 	}
@@ -51,7 +51,7 @@
 	button {
 		color: #425831;
 		background-color: white;
-		padding: 1em 4.2em;
+		padding: 0.6em 4.2em;
 		border-radius: 4px;
 		margin-top: px-to-rem(14px);
 		opacity: 0.5;

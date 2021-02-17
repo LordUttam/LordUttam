@@ -26,7 +26,7 @@ a {
   color: inherit; }
 
 p, a, button, input {
-  font-size: px-to-rem(18px); }
+  font-size: 1.125rem; }
 
 @keyframes intro-content {
   0% {
@@ -44,10 +44,10 @@ p, a, button, input {
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
   width: 100%;
+  margin: 0;
   position: fixed; }
 
 #landing {
@@ -58,7 +58,7 @@ p, a, button, input {
   height: 100vh;
   color: white;
   position: relative;
-  z-index: 2;
+  z-index: 10;
   transition: all 0.4s;
   animation-name: intro-content;
   animation-duration: 1.4s;
@@ -71,13 +71,13 @@ p, a, button, input {
     animation-duration: 1s;
     animation-delay: 0.5s; }
   #landing p {
-    width: 40%;
+    width: 40vw;
     text-align: center;
     line-height: 190%; }
   #landing button {
     color: #425831;
     background-color: white;
-    padding: 1em 4.2em;
+    padding: 0.6em 4.2em;
     border-radius: 4px;
     margin-top: 0.875rem;
     opacity: 0.5; }
@@ -106,8 +106,8 @@ p, a, button, input {
 
 #above-fold {
   position: relative;
-  color: white;
   z-index: 12;
+  color: white;
   padding-left: 52px;
   padding-top: 62px;
   box-sizing: border-box;
@@ -148,11 +148,11 @@ p, a, button, input {
         opacity: 0.6; }
 
 #register-side-bar {
-  width: 140%;
+  width: 170%;
   display: flex;
   position: absolute;
   transition: all 0.6s 1s;
-  transform: translateX(1444px); }
+  transform: translateX(1464px); }
   #register-side-bar #empty-section {
     width: 96%;
     height: 100vh; }
@@ -185,7 +185,7 @@ p, a, button, input {
     background-color: rgba(227, 227, 227, 0.08);
     height: 100vh;
     box-sizing: border-box;
-    width: 40%;
+    width: 70%;
     color: white;
     padding-top: 25vh; }
     #register-side-bar #form-section h2 {
@@ -214,23 +214,6 @@ p, a, button, input {
       color: #b29dff; }
       #register-side-bar #form-section a:hover {
         opacity: 0.7; }
-
-#current-users {
-  width: 60%;
-  color: white;
-  margin: 11.375rem auto;
-  margin-bottom: 7.5rem;
-  padding: 1.375rem 0;
-  padding-bottom: 0.625rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.38);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.38); }
-  #current-users h3, #current-users h4 {
-    text-align: center; }
-  #current-users h3 {
-    font-size: 3.25rem;
-    margin-top: 0.75rem; }
-  #current-users h4 {
-    font-size: 1.5rem; }
 
 #info-section {
   color: #cfcfcf;
@@ -270,31 +253,22 @@ p, a, button, input {
     position: relative;
     left: 60px; }
 
-#footer {
+#current-users {
+  width: 60%;
   color: white;
-  padding: 2.5rem 0;
-  background-color: rgba(13, 13, 13, 0.48);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  #footer h5 {
-    font-size: 1.875rem;
-    margin: 1.875rem 0; }
-  #footer hr {
-    width: 4%;
-    border: 1px solid rgba(255, 255, 255, 0.38); }
-  #footer h6 {
-    font-size: 1rem;
-    margin: 0.5rem 0; }
-  #footer #social-icons {
-    padding: 0.75rem 0; }
-    #footer #social-icons img {
-      width: 2.25rem;
-      padding: 0 0.25rem;
-      transition: all 0.2s; }
-      #footer #social-icons img:hover {
-        transform: scale(1.2); }
+  margin: 11.375rem auto;
+  margin-bottom: 7.5rem;
+  padding: 1.375rem 0;
+  padding-bottom: 0.625rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.38);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.38); }
+  #current-users h3, #current-users h4 {
+    text-align: center; }
+  #current-users h3 {
+    font-size: 3.25rem;
+    margin-top: 0.75rem; }
+  #current-users h4 {
+    font-size: 1.5rem; }
 
 #locations {
   margin: 3.75rem 0;
@@ -464,3 +438,29 @@ p, a, button, input {
       transition: all 0.5s; }
       #weekly-deals #deal figure:hover {
         transform: scale(1.1); }
+
+#footer {
+  color: white;
+  padding: 2.5rem 0;
+  background-color: rgba(13, 13, 13, 0.48);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #footer h5 {
+    font-size: 1.875rem;
+    margin: 1.875rem 0; }
+  #footer hr {
+    width: 4%;
+    border: 1px solid rgba(255, 255, 255, 0.38); }
+  #footer h6 {
+    font-size: 1rem;
+    margin: 0.5rem 0; }
+  #footer #social-icons {
+    padding: 0.75rem 0; }
+    #footer #social-icons img {
+      width: 2.25rem;
+      padding: 0 0.25rem;
+      transition: all 0.2s; }
+      #footer #social-icons img:hover {
+        transform: scale(1.2); }
