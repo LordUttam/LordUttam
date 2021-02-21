@@ -103,7 +103,7 @@ $form-color: rgba(227, 227, 227, 0.08);
 	display: flex;
 	position: absolute;
 	transition: all $side-bar-trans-time $side-bar-trans-delay;
-	transform: translateX(1464px);
+	transform: translateX(200px);
 
 	#empty-section {
 		width: $empty-width;
