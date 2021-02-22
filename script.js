@@ -16,7 +16,7 @@ $("#form-section").mouseleave(function() { closeForm(); });
 
 
 function openForm() {
-	$("#register-side-bar").css("transform", "translate(-450px)");
+	$("#register-side-bar").css("transform", "translate(-30vw)");
 	$("#register-side-bar").css("transition-delay", "0s");
 	$("#register-side-bar").css("z-index", "100");
 
