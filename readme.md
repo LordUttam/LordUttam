@@ -1,1 +1,0 @@
-A single page website created using HTML, SASS and JS. 
